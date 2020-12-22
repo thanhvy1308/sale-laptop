@@ -2,10 +2,10 @@
 -- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Dec 14, 2020 at 04:00 AM
--- Server version: 8.0.18
--- PHP Version: 7.3.12
+-- Máy chủ: 127.0.0.1:3306
+-- Thời gian đã tạo: Th12 22, 2020 lúc 05:44 PM
+-- Phiên bản máy phục vụ: 8.0.18
+-- Phiên bản PHP: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbdoan`
+-- Cơ sở dữ liệu: `dbdoan`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `binhluan`
+-- Cấu trúc bảng cho bảng `binhluan`
 --
 
 DROP TABLE IF EXISTS `binhluan`;
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `binhluan` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chitiethoadon`
+-- Cấu trúc bảng cho bảng `chitiethoadon`
 --
 
 DROP TABLE IF EXISTS `chitiethoadon`;
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `chitiethoadon` (
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `chitiethoadon`
+-- Đang đổ dữ liệu cho bảng `chitiethoadon`
 --
 
 INSERT INTO `chitiethoadon` (`ma_chitiethd`, `soluong`, `dongia`, `HOADONma_hd`, `SANPHAMma_sp`) VALUES
@@ -73,7 +73,7 @@ INSERT INTO `chitiethoadon` (`ma_chitiethd`, `soluong`, `dongia`, `HOADONma_hd`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `danhmuc`
+-- Cấu trúc bảng cho bảng `danhmuc`
 --
 
 DROP TABLE IF EXISTS `danhmuc`;
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `danhmuc` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `danhmuc`
+-- Đang đổ dữ liệu cho bảng `danhmuc`
 --
 
 INSERT INTO `danhmuc` (`ma_danhmuc`, `tendanhmuc`, `url`, `hinh`) VALUES
@@ -98,7 +98,7 @@ INSERT INTO `danhmuc` (`ma_danhmuc`, `tendanhmuc`, `url`, `hinh`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `danhmuc_sanpham`
+-- Cấu trúc bảng cho bảng `danhmuc_sanpham`
 --
 
 DROP TABLE IF EXISTS `danhmuc_sanpham`;
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `danhmuc_sanpham` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hangsx`
+-- Cấu trúc bảng cho bảng `hangsx`
 --
 
 DROP TABLE IF EXISTS `hangsx`;
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS `hangsx` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `hangsx`
+-- Đang đổ dữ liệu cho bảng `hangsx`
 --
 
 INSERT INTO `hangsx` (`ma_nhasanxuat`, `ten_nhasanxuat`, `mota_nhasanxuat`, `hinh_nhasanxuat`) VALUES
@@ -139,7 +139,7 @@ INSERT INTO `hangsx` (`ma_nhasanxuat`, `ten_nhasanxuat`, `mota_nhasanxuat`, `hin
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hinh`
+-- Cấu trúc bảng cho bảng `hinh`
 --
 
 DROP TABLE IF EXISTS `hinh`;
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `hinh` (
 ) ENGINE=InnoDB AUTO_INCREMENT=153 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `hinh`
+-- Đang đổ dữ liệu cho bảng `hinh`
 --
 
 INSERT INTO `hinh` (`ma_hinh`, `tenhinh`, `url`, `SANPHAMma_sp`, `status`) VALUES
@@ -194,7 +194,7 @@ INSERT INTO `hinh` (`ma_hinh`, `tenhinh`, `url`, `SANPHAMma_sp`, `status`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `hoadon`
+-- Cấu trúc bảng cho bảng `hoadon`
 --
 
 DROP TABLE IF EXISTS `hoadon`;
@@ -213,7 +213,7 @@ CREATE TABLE IF NOT EXISTS `hoadon` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `hoadon`
+-- Đang đổ dữ liệu cho bảng `hoadon`
 --
 
 INSERT INTO `hoadon` (`ma_hd`, `tongtien`, `tongsl`, `diachi`, `sdt`, `status`, `ngaytao`, `ngaycapnhat`, `USERma_user`) VALUES
@@ -225,7 +225,7 @@ INSERT INTO `hoadon` (`ma_hd`, `tongtien`, `tongsl`, `diachi`, `sdt`, `status`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sanpham`
+-- Cấu trúc bảng cho bảng `sanpham`
 --
 
 DROP TABLE IF EXISTS `sanpham`;
@@ -254,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `sanpham` (
 ) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `sanpham`
+-- Đang đổ dữ liệu cho bảng `sanpham`
 --
 
 INSERT INTO `sanpham` (`ma_sp`, `tensp`, `soluong`, `dongia`, `thoigianbaohanh`, `giakhuyenmai`, `RAM`, `CPU`, `VGA`, `manhinh`, `hedieuhanh`, `status`, `mota`, `url`, `ngaytao`, `ngaycapnhat`, `DANHMUCma_danhmuc`, `HANGSXma_nhasanxuat`, `hinhanh`) VALUES
@@ -267,7 +267,7 @@ INSERT INTO `sanpham` (`ma_sp`, `tensp`, `soluong`, `dongia`, `thoigianbaohanh`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 DROP TABLE IF EXISTS `user`;
@@ -281,57 +281,58 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ngaytao` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `ngaycapnhat` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `role` tinyint(3) DEFAULT '0',
+  `status` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `sdt`, `email`, `diachi`, `password`, `ngaytao`, `ngaycapnhat`, `role`) VALUES
-(8, 'Mỹ Duyên', '0123456', 'myduyen06122910@gmail.com', '18 đường Phạm Thị Tánh phường 4 quận 8 TP Hồ Chi Minh', '$2y$10$G7mYd3iBUVsc5hNiWdFxGenzbh4n04DD72yKmdd1BgiFTw9.ngl8O', NULL, NULL, 1),
-(9, 'Thanh Vy', '0123456', 'meoxu_dekcantrai99@yahoo.com', NULL, '$2y$10$dPsCZurpaZnwsbKSdEPZZ.v7QImBL4f1.8SAUu87XUApezIt6xMYW', NULL, NULL, 1),
-(24, 'Duyen Nguyen', '0352771239', 'dh51704984@student.stu.edu.vn', '18 Pham Thi Tanh phuong 4 quan 8 TP HCM', '$2y$10$k/slxC8Z8117pMMHa1j34OmsB7Vpbqp/aa4sy3ny0PNLZY9LquncS', '2020-12-08 08:33:00', '2020-12-08 08:33:00', 0);
+INSERT INTO `user` (`id`, `name`, `sdt`, `email`, `diachi`, `password`, `ngaytao`, `ngaycapnhat`, `role`, `status`) VALUES
+(8, 'Mỹ Duyên', '0123456', 'myduyen06122910@gmail.com', '18 đường Phạm Thị Tánh phường 4 quận 8 TP Hồ Chi Minh', '$2y$10$G7mYd3iBUVsc5hNiWdFxGenzbh4n04DD72yKmdd1BgiFTw9.ngl8O', NULL, NULL, 1, 0),
+(9, 'Thanh Vy', '0123456', 'meoxu_dekcantrai99@yahoo.com', NULL, '$2y$10$dPsCZurpaZnwsbKSdEPZZ.v7QImBL4f1.8SAUu87XUApezIt6xMYW', NULL, NULL, 1, 0),
+(24, 'Duyen Nguyen', '0352771239', 'dh51704984@student.stu.edu.vn', '18 Pham Thi Tanh phuong 4 quan 8 TP HCM', '$2y$10$k/slxC8Z8117pMMHa1j34OmsB7Vpbqp/aa4sy3ny0PNLZY9LquncS', '2020-12-08 08:33:00', '2020-12-08 08:33:00', 0, 1);
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `binhluan`
+-- Các ràng buộc cho bảng `binhluan`
 --
 ALTER TABLE `binhluan`
   ADD CONSTRAINT `FKBINHLUAN139500` FOREIGN KEY (`SANPHAMma_sp`) REFERENCES `sanpham` (`ma_sp`),
   ADD CONSTRAINT `FKBINHLUAN326762` FOREIGN KEY (`USERma_user`) REFERENCES `user` (`id`);
 
 --
--- Constraints for table `chitiethoadon`
+-- Các ràng buộc cho bảng `chitiethoadon`
 --
 ALTER TABLE `chitiethoadon`
   ADD CONSTRAINT `FKCHITIETHOA356838` FOREIGN KEY (`HOADONma_hd`) REFERENCES `hoadon` (`ma_hd`),
   ADD CONSTRAINT `FKCHITIETHOA558660` FOREIGN KEY (`SANPHAMma_sp`) REFERENCES `sanpham` (`ma_sp`);
 
 --
--- Constraints for table `danhmuc_sanpham`
+-- Các ràng buộc cho bảng `danhmuc_sanpham`
 --
 ALTER TABLE `danhmuc_sanpham`
   ADD CONSTRAINT `FK_DM` FOREIGN KEY (`DANHMUCma_danhmuc`) REFERENCES `danhmuc` (`ma_danhmuc`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   ADD CONSTRAINT `FK_SP` FOREIGN KEY (`SANPHAMma_sp`) REFERENCES `sanpham` (`ma_sp`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `hinh`
+-- Các ràng buộc cho bảng `hinh`
 --
 ALTER TABLE `hinh`
   ADD CONSTRAINT `hinh_ibfk_1` FOREIGN KEY (`SANPHAMma_sp`) REFERENCES `sanpham` (`ma_sp`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
--- Constraints for table `hoadon`
+-- Các ràng buộc cho bảng `hoadon`
 --
 ALTER TABLE `hoadon`
   ADD CONSTRAINT `FKHOADON604606` FOREIGN KEY (`USERma_user`) REFERENCES `user` (`id`);
 
 --
--- Constraints for table `sanpham`
+-- Các ràng buộc cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
   ADD CONSTRAINT `FKSANPHAM558209` FOREIGN KEY (`HANGSXma_nhasanxuat`) REFERENCES `hangsx` (`ma_nhasanxuat`);

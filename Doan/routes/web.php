@@ -3,6 +3,7 @@
 use App\Http\Controllers\admin\DonhangController;
 use App\Http\Controllers\admin\QuanlyController;
 use App\Http\Controllers\admin\SanphamController;
+use App\Http\Controllers\admin\KhachhangController;
 use App\Http\Controllers\user\AccountController;
 use App\Http\Controllers\user\CartController;
 use App\Http\Controllers\user\CheckoutController;
@@ -42,6 +43,8 @@ Route::prefix('quanly')->group(function (){
         Route::get('suasp/{id}',[SanphamController::class,'hienthisua'])->name('suasp');
         Route::post('suasp/{id}',[SanphamController::class,'sua'])->name('suasp');
     });
+    Route::get('/khachhang',[KhachhangController::class,'index'])->name('khachhang')->middleware('authAdmin');
+    Route::get('/chitietkh/{id}',[KhachhangController::class,'chitietkh'])->name('chitietkh')->middleware('authAdmin');
 });
 
 //User

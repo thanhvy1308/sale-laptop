@@ -29,17 +29,17 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link" href="{{asset('#')}}">
+      <!-- <a class="nav-link" href="{{asset('#')}}">
         <i class="fas fa-fw fa-table"></i>
         <span>Danh mục</span>
-      </a>
+      </a> -->
       <a class="nav-link" href="{{route('donhang')}}">
         <i class="fas fa-fw fa-table"></i>
         <span>Đơn hàng</span>
       </a>
-      <a class="nav-link" href="{{asset('#')}}">
+      <a class="nav-link" href="{{route('khachhang')}}">
         <i class="fas fa-fw fa-table"></i>
-        <span>Thành viên</span>
+        <span>Khách Hàng</span>
       </a>
     </li>
     <!-- Divider -->
